@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: hsl(217, 54%, 11%);
+      font-family: 'Outfit',sans-serif;
+    }
+
+    .card{
+      display: flex;
+      flex-direction: column;
+      width: 280px;
+      align-items: center;
+      justify-self: center;
+      background-color: hsl(216, 50%, 16%);
+      padding: 0.8rem;
+      border-radius: 15px;
+      gap: 0.6rem;
+    }
+
+    .card-img{
+      width: 250px;
+      border-radius: inherit;
+    }
+    .card > h1{
+      color: hsl(0, 0%, 100%);
+      font-size: 16px;
+      align-self: flex-start;
+    }
+
+    .card > p{
+      color: #5d87c2;
+      font-size: 16px;
+    }
+
+    .time-card{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      align-self: flex-start;
+      gap: 4rem;
+    }
+
+    .eth{
+      color: hsl(178, 100%, 50%);
+      font-weight: bolder;
+    }
+
+    .eth > img{
+      margin-right: 5px;
+    }
+
+    .time{
+      color: #5d87c2;
+    }
+
+    .profile > img{
+      width: 30px;
+    }
+
+    .profile{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      align-self: flex-start;
+      gap: 1rem;
+      color: white;
+    }
+
+    .profile em{
+      color: #5d87c2;
+      font-style: normal;
+    }
+
+    .attribution em{
+      color: white;
+      font-style: normal;
+    }
+
+    hr {
+  width: 100%;
+  border-top: 1px solid #5d87c2;
+
+}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="card-img" src="images/image-equilibrium.jpg">
+    <h1>Equilibrium #3429</h1>
+    <p>  Our Equilibrium collection promotes balance and calm.</p>
+    <div class="time-card">
+      <div class="eth">
+        <img src="images/icon-ethereum.svg">
+        <span>0.041 ETH</span>
+      </div>
+  <div class="time">
+    <img src="images/icon-clock.svg">
+    <span> 3 days left</span>
+  </div>
+
+    </div>
+    <hr>
+    <div class="profile">
+      <img src="images/image-avatar.png">
+      <span> <em>Creation of </em>Jules Wyvern</span>
+    </div>
+  </div>
+
+  <div class="attribution">
+    <em>Challenge by </em><a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    <em>Coded by </em><a href="#">S Bazith</a>.
+  </div>
+</body>
+</html>
